@@ -1,0 +1,32 @@
+@media screen and ( max-width:479px )
+{
+
+  .header {
+    width: 150px;
+  }
+  .main {
+    width: 150px;
+  }
+
+  .main1 {
+    height: 100px;
+  }
+
+  .left {
+    float: none;
+  }
+
+  .right {
+    width: 150px;
+    height: 100px;
+    float: none;
+  }
+
+  .main2_box {
+    width: 150px;
+  }
+
+  .footer {
+    width: 150px;
+  }
+}
