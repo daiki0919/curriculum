@@ -1,17 +1,12 @@
 <?php
-  for ($num = 1 ; $num <= 100 ; $num++) {
-    if ($num % 3 === 0 && $num % 5 === 0) {
-      echo "FizzBuzz!!";
-      echo "<br>";
-    } elseif ($num % 3 === 0){
-      echo "Fuzz!";
-      echo "<br>";
-    } elseif ($num % 5 === 0) {
-      echo "Buzz!";
-      echo "<br>";
-    } else {
-      echo $num;
-      echo "<br>";
+  function price( $products ) {
+    foreach ( $products as $proKey => $proValue ) {
+        $tax_price = $proValue * 1.1;
+        echo "<br>";
+        echo $proKey . "の税込み価格は" . $tax_price . "です";
+        echo "<br>";
     }
-  }
+}
+$products = ["鉛筆" => 100,"消しゴム" => 150,"物差し" => 500];
+price( $products );
 ?>
