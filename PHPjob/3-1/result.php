@@ -1,6 +1,6 @@
 <?php
     $name = $_POST['my_name'];
-    $number = $_POST['number'] * mt_rand(1,100);
+    $number = $_POST['number'] * mt_rand(1,6);
 ?>
 <?php echo date("Y-m-d H:i:s", time()); ?>
 <p>名前は<?php echo $name; ?>です。</p>
